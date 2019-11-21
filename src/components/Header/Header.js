@@ -23,7 +23,7 @@ const Header = () => {
                         <div className="header-box__container">
                             <div className="header-box__logo-box">
                                 <Link to="/">
-                                    <img className="header-box__logo-img" src="/images/shop_header.png" alt="" />
+                                    <img className="header-box__logo-img" src="/images/shop_header.png" alt="Shop logo" />
                                 </Link>
                             </div>
                             <div className="header-box__search">

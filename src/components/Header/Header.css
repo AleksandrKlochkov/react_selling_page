@@ -7,10 +7,10 @@
     margin: 0 auto 2rem;
 }
 
-.header-box{
+.header-box {
     border-radius: 5px;
+    padding: 10px 0;
 }
-
 
 .autorization-links {
     width: 100%;
@@ -56,10 +56,10 @@
 }
 
 .header-box__logo-box {
-    display: inline-block;
     float: left;
     position: relative;
-    width: 220px;
+    width: 100%;
+    max-width: 135px;
     height: 110px;
 }
 
@@ -80,7 +80,17 @@
     display: inline-block;
     display: flex;
     align-items: center;
-    height: 110px;
     width: 100%;
     margin: 0 2rem;
 }
+
+@media screen and (max-width: 768px) {
+    .header-box__search {
+        order: 3;
+        margin: 0;
+    }
+    .header-box__container {
+        flex-wrap: wrap;
+        flex: 2 100%;
+    }
+  }
