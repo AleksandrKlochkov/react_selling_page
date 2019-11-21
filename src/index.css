@@ -30,22 +30,37 @@ body {
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: #ddd;
 }
 
 .content {
-	flex: 1 0 auto;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 2rem;
+  flex-grow: 1;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
 }
 
 .footer {
-    flex: 0 0 auto;
-    min-height: 100px;
-    height: 100px;
-    background: #3498DB;
+  flex: 0 0 auto;
+  min-height: 75px;
+  background-color: #20232a;
 }
 
-
-
-
+.content-box {
+  width: 1160px;
+  padding: 2rem 0;
+  max-width: 95%;
+  margin: 0 auto;
+  border-radius: 5px 5px 0px 0px;
+  min-height: 540px;
+  flex-grow: 1;
+}

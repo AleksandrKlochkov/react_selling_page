@@ -1,50 +1,46 @@
 import React from 'react'
+import './Header.css'
+import Search from '../UI/Search/Search'
+import {Link}from 'react-router-dom'
 
 const Header = () => {
     return (
-        <div class="header">
-        <div class="header-autorization-b">
-            <div class="container-content">
-                <div class="autorization-list-b">
-                    <ul class="ul-autorization-list">
-                        <li><a href="#">Вход</a></li>
-                        <li>|</li>
-                        <li><a href="#">Регистрация</a></li>
-                    </ul>
-                </div>   
-            </div>
-        </div>
+        <div className="Header">
 
-        <div class="header-nav-menu">
-              <div class="content-menu-header-fon">
-            <div class="container-content">
-                <div class="header-nav-menu-cont">
-                    <div class="header-logo-brend">
-                        <a href="#">
-                            <img class="header-logo-img" src="/images/muzmag-logo.png" alt="" />
-                        </a>
-                    </div>
-                    <div class="header-search-b">
-                        <div class="input-serch-b">
-                            <input class="input-header-search" placeholder="Поиск..." type="text" />
-                        </div>
-                    </div>
-                    <div class="header-bascet-b">
-                        <a href="#">
-                            <div class="basket-b">
-                                <span>1</span>
-                            </div>
-                            <p href="#">Корзина<br/><span>0 товаров</span></p>
-                        </a>
-                        
-
+                <div className="autorization-links header__autorization-links">
+                    <div className="container">
+                        <ul className="autorization-links__list">
+                            <li><a href="#">Вход</a></li>
+                            <li>|</li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul> 
                     </div>
                 </div>
-            </div>
-        </div>
-        </div>         
+
+                <div className="header-box bg-light">
+                    <div className="container">
+                        <div className="header-box__container">
+                            <div className="header-box__logo-box">
+                                <Link to="/">
+                                    <img className="header-box__logo-img" src="/images/shop_header.png" alt="" />
+                                </Link>
+                            </div>
+                            <div className="header-box__search">
+                                <Search />
+                            </div>
+                            <div className="header-bascet-b">
+                                <Link to="/basket">
+                                    <div className="basket-b">
+                                        <span>1</span>
+                                    </div>
+                                    <p>Корзина<br/><span>0 товаров</span></p> 
+                                </Link>
+                            </div>
+                        </div>
+                    </div>        
+            </div> 
     </div>
     )
-   
-    
 }
+
+export default Header

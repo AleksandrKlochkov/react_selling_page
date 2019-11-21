@@ -1,0 +1,156 @@
+.Header {
+    width: 1160px;
+    margin: 0 auto;
+    max-width: 95%;
+    box-sizing: border-box;
+
+    background: #ddd;
+    margin: 0 auto 2rem;
+}
+
+.header-box{
+    border-radius: 5px;
+}
+
+
+.autorization-links {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-menu-header-fon {
+    border-bottom: 2px solid #ddd;
+    background: #f8f8f8;
+    border-radius: 5px;
+}
+
+
+.autorization-links__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    float: right;
+}
+
+.autorization-links__list li{
+    float: left;
+    padding: 10px 5px;
+    color:#4c4c4c;
+    font-weight: bold;
+}
+
+.autorization-links__list li a{
+    text-decoration: none;
+    color:#4c4c4c;
+}
+
+.autorization-links__list li a:hover{
+    text-decoration: underline;
+}
+
+.header-box__container {
+    box-sizing: border-box;
+    min-height: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-box__logo-box {
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 220px;
+    height: 110px;
+}
+
+.header__logo-box a{
+    text-decoration: none;
+}
+
+.header-box__logo-img{
+    border: none;
+    max-width: 135px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.header-box__search {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    height: 110px;
+    width: 100%;
+    margin: 0 2rem;
+}
+
+
+/*bascet-cart*/
+.header-bascet-b {
+    float: right;
+    height: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.basket-b {
+    position: relative;
+    width: 35px;
+    padding: 10px;
+    height: 35px;
+    background: url('/images/basket-ico.png');
+    background-position: center center;
+    background-size: 35px;
+    background-repeat: no-repeat;
+}
+
+.basket-b span {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    display: inline-block;
+    min-width: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 50%;
+    height: 10px;
+    padding: 5px;
+    background: #dddddd;
+    line-height: 10px;
+    color: #282828;
+}
+
+.header-bascet-b{
+    text-align: left;
+}
+
+.header-bascet-b a {
+    text-decoration: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.header-bascet-b p{
+    text-decoration:none;
+    font-weight: 300;
+    color: #1e509a;
+        padding: 5px 5px 5px 7px;
+}
+
+.header-bascet-b p span{
+    font-size: 14px;
+    font-weight: 300;
+    color: #4c4c4c;
+}
+/*bascet-cart*/
