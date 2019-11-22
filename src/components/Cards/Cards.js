@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import './Cards.css'
-import Sorting from '../../components/Sorting/Sorting'
 
 import {Link, Route} from 'react-router-dom'
 
@@ -46,7 +45,7 @@ renderCardsLines(cards) {
                         </div>
             
                         <div className="product-pay-default-btn-b-line">
-                            <Link className="product-btn-default-pay-line" href="#">В корзину</Link>       
+                            <Link className="product-btn-default-pay-line" to="#">В корзину</Link>       
                         </div>
                     </div>
                 </li>   
@@ -87,7 +86,7 @@ renderCardsTables(cards){
                             </Link>
 
                             <div className="product-pay-default-btn-b">
-                                    <Link className="product-btn-default-pay">В корзину</Link>       
+                                    <Link className="product-btn-default-pay" to="#">В корзину</Link>       
                             </div>
                         </div>
                     </li>
@@ -101,10 +100,9 @@ renderCardsTables(cards){
 }
    
     render(){
-        console.log(this.props)
         return(
             <div className="conent-product-b">
-                                <Sorting />
+                                
                 <Route path="/home/tables">
                      <ul className="ul-content-product-table">
                         { this.renderCardsTables(this.props.cards) }

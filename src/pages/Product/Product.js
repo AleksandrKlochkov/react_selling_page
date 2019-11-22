@@ -7,57 +7,57 @@ class Product extends Component {
     render(){
         return(
             <div>
-                 <div class="product-page-content">
-                            <div class="product-page-text-cont-b">
-                                <div class="product-page-b">
-                                    <div class="img-picture-product-line">
-                                            <div class="product-pictures-line">
+                 <div className="product-page-content">
+                            <div className="product-page-text-cont-b">
+                                <div className="product-page-b">
+                                    <div className="img-picture-product-line">
+                                            <div className="product-pictures-line">
                                                 <img src="/images/product1.jpg" alt="Product images"/>
                                             </div>
                                     </div>  
-                                    <div class="text-product-line">
-                                        <div class="product-category-names-line">
-                                            <ul class="ul-product-category-names-line">
+                                    <div className="text-product-line">
+                                        <div className="product-category-names-line">
+                                            <ul className="ul-product-category-names-line">
                                                 <li>Аккардионы</li>
-                                                <li><i class="fa fa-chevron-right icon"></i></li>
+                                                <li><i className="fa fa-chevron-right icon"></i></li>
                                             </ul>
                                             <h3>HOHNER NOVA III 96 (A4271) WHITE</h3>
                                         </div>
-                                        <div class="product-item number">
+                                        <div className="product-item number">
                                             <p>Артикул: <span>4564544646465564</span></p>
                                         </div>
-                                        <div class="product-text-short-description">
+                                        <div className="product-text-short-description">
                                             <p>Кнопочный аккордеон 7/8, трехголосный, в правой клавиатуре - 72 кнопки, 5 регистров, в левой клавиатуре - 96 басов, 3 регистра, цвет белый, B-stepped, вес 7 электрогитара, цвет белый, корпус - махогани с верхом из кленового шпона, материал грифа - махогани, профиль грифа - SlimTaper™ “D”, крепление грифа к корпусу - вклеенный, накладка - палисандр, лады - 22 medium jumbo, радиус накладки грифа - 12`, инкрустация в виде прямоугольников, ширина верхнего порожка - 1.680” (43 mm), мензура - 24,75` (628.7 мм), звукосниматели - H/H Pro-Bucker-3™/Pro-Bucker-2™, регуляторы - 2 громкости с переключателями push/pull, 2 тона, 3-х позиционный переключатель звук</p>
                                         </div>
                                     </div>
 
-                                    <div class="text-product-line-two">
-                                        <div class="produc-price-sale-b-line">
-                                            <div class="product-price-b-line">
-                                                <p class="old-price-p-line"><span>28 899 руб.</span>  -3 000</p>
-                                                <p class="price-p-line">25 899 руб.</p>
+                                    <div className="text-product-line-two">
+                                        <div className="produc-price-sale-b-line">
+                                            <div className="product-price-b-line">
+                                                <p className="old-price-p-line"><span>28 899 руб.</span>  -3 000</p>
+                                                <p className="price-p-line">25 899 руб.</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="product-pay-default-btn-b-line">
-                                        <Link class="product-btn-default-pay-line" to="/">В корзину</Link>       
+                                    <div className="product-pay-default-btn-b-line">
+                                        <Link className="product-btn-default-pay-line" to="/">В корзину</Link>       
                                     </div>
                                 </div>
                             </div>
                       </div>
 
 
-                        <div class="product-page-menu-b">
-                            <ul class="ul-product-menu-description">
-                                <li><Link class="a-product-description-activ">ОПИСАНИЕ</Link></li>
+                        <div className="product-page-menu-b">
+                            <ul className="ul-product-menu-description">
+                                <li><Link className="a-product-description-activ" to="#">ОПИСАНИЕ</Link></li>
                             </ul>
                         </div>
 
 
-                       <div class="product-page-menu-text-b">
+                       <div className="product-page-menu-text-b">
 
-                            <ul class="ul-product-menu-description">
+                            <ul className="ul-product-menu-description">
                                 <li>
                                     <div>
                                     <p>Модель Les Paul Custom дебютировала в 1954 году, сразу после успешной модели Les Paul Goldtop. Сам Лес Пол стремился донести до публики, что цельнокорпусная электрогитара - это не какая-то причуда, но полноценный музыкальный инструмент, а его именная модель Les Paul - лучшая среди всех существующих электрогитар. Итак, Лес Пол сделать для него гитары, которые наиболее лучшим образом сочетались бы с его смокингом - модели полностью чёрного и белого цветов с золотой фурнитурой.

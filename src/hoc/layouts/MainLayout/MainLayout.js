@@ -7,6 +7,7 @@ import Product from '../../../pages/Product/Product'
 import Header from '../../../components/Header/Header'
 import Navbar from '../../../components/Navbar/Navbar'
 import Footer from '../../../components/Footer/Footer'
+import Sorting from '../../../components/Sorting/Sorting'
 import {Switch, Route, Redirect} from 'react-router-dom'
 import {Error404} from '../../../pages/Error404/Error404'
 import ProductCart from '../../../components/ProductsCart/ProductsCart'
@@ -27,6 +28,7 @@ class MainLayout extends Component {
                 <div className="content">
                     <div className="content-box bg-light w">
                         <div className="container-wrap">
+                        <Sorting />
                         <div className="row">
                             <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12">
                                 <Switch>
