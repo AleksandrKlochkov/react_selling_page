@@ -3,7 +3,7 @@ import './Sorting.css'
 
 import {NavLink} from 'react-router-dom'
 
-const Sorting  = props => {
+const Sorting  = () => {
     return (
            <div className="view-product-page-b">
                <ul className="ul-view-product-page">

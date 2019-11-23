@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './Registration.css'
 import Form from '../../components/Form/Form'
 import Input from '../../components/UI/Input/Input'
 import Button from '../../components/UI/Button/Button'
@@ -9,7 +10,7 @@ import Button from '../../components/UI/Button/Button'
 // import {connect} from 'react-redux'
 
 
-class Contacts extends Component {
+class Registration extends Component {
 
     state = {
        // alertMessage: alertMessage('danger','Произошла непредвиденная ошибка',false),
@@ -45,21 +46,37 @@ class Contacts extends Component {
                    minLength: 2  
                 }         
               },
-              text: {
+            password: {
+              value: '',
+              type: 'password',
+              label: 'Пароль',
+              placeholder: 'Введите пароль',
+              validOptions:{
+                valid: false,
+                errorMessage: 'Введите корректный пароль'
+              },
+              touched: false,
+              validation: {
+                 required: true,
+                 minLength: 6
+              }         
+            },
+            password2: {
                 value: '',
-                type: 'text',
-                label: 'Сообщение',
-                placeholder: 'Введите сообщение',
+                type: 'password',
+                label: 'Пароль еще раз',
+                placeholder: 'Введите пароль повторно',
                 validOptions:{
                     valid: false,
-                    errorMessage: 'Введите корректное сообщение'
-                  },
+                    errorMessage: 'Введите пароль повторно'
+                },
                 touched: false,
                 validation: {
                    required: true,
-                   minLength: 10  
+                   passwordReplay: true
                 }         
               }
+
         }
     }
 
@@ -129,10 +146,10 @@ class Contacts extends Component {
     }
     render(){
         return(
-            <div className="contacts bg-white border">
+            <div className="Registration">
                 <div className="form-box">
                     <Form
-                    formName={'Оставить отзыв'}
+                    formName={'Регистрация'}
                     onSubmit={(event)=>this.onSubmitHandler(event)}
                     >
                         {/* {this.props.alertMessage.show ? <Alert type={this.props.alertMessage.type} message={this.props.alertMessage.text}/> : null} */}
@@ -157,4 +174,4 @@ class Contacts extends Component {
 //     }
 // }
 // connect(mapStateToProps, mapDispatchToProps)(
-export default Contacts
+export default Registration

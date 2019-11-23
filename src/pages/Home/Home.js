@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './Home.css'
 import Cards from '../../components/Cards/Cards'
+import Sorting from '../../components/Sorting/Sorting'
 
 class Home extends Component{
 
@@ -24,6 +25,7 @@ class Home extends Component{
     render(){
         return(
             <div>
+                                        <Sorting />
                 <Cards cards={this.state.cards} productSwitching={this.state.productSwitching}/>
             </div>  
         )

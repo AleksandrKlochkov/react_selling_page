@@ -7,10 +7,11 @@ import Product from '../../../pages/Product/Product'
 import Header from '../../../components/Header/Header'
 import Navbar from '../../../components/Navbar/Navbar'
 import Footer from '../../../components/Footer/Footer'
-import Sorting from '../../../components/Sorting/Sorting'
+import Login from '../../../pages/Login/Login'
 import {Switch, Route, Redirect} from 'react-router-dom'
 import {Error404} from '../../../pages/Error404/Error404'
 import ProductCart from '../../../components/ProductsCart/ProductsCart'
+import Registration from '../../../pages/Registration/Registration'
 
 class MainLayout extends Component {
     state = {
@@ -25,10 +26,9 @@ class MainLayout extends Component {
             <div className="wrapper">
                 <Header />
                 <Navbar navLinks={this.state.navLinks} />
-                <div className="content">
-                    <div className="content-box bg-light w">
+                <div className="content mt-3">
+                    <div className="content-box bg-light">
                         <div className="container-wrap">
-                        <Sorting />
                         <div className="row">
                             <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12">
                                 <Switch>
@@ -42,8 +42,10 @@ class MainLayout extends Component {
                                     <Route path="/product/:id" component={Product}/>
                                     <Route path="/about" component={AboutUs}/>
                                     <Route path="/contacts" component={Contacts}/>
+                                    <Route path="/login" component={Login}/>
+                                    <Route path="/signup" component={Registration}/>
                                     <Route path="*" component={Error404}/>
-                                    
+                                    <Route path="*/*" component={Error404}/>
                                 </Switch>
                             </div>
                             <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12">

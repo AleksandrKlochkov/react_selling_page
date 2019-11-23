@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+#api
+/src/config/config.keys.js
+
 # production
 /build
 
