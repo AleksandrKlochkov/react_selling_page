@@ -44,8 +44,7 @@ class MainLayout extends Component {
                                     <Route path="/contacts" component={Contacts}/>
                                     <Route path="/login" component={Login}/>
                                     <Route path="/signup" component={Registration}/>
-                                    <Route path="*" component={Error404}/>
-                                    <Route path="*/*" component={Error404}/>
+                                    <Route component={Error404}/>
                                 </Switch>
                             </div>
                             <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12">
@@ -60,7 +59,9 @@ class MainLayout extends Component {
                 </div>
                 
                 <div className="footer d-flex align-items-center">
+                     <div className="container">
                         <Footer />
+                     </div>
                 </div>
             </div>
         )
